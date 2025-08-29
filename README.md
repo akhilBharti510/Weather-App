@@ -16,7 +16,7 @@ Fetches real-time weather data and displays a 5-day forecast with a light/dark t
 - JavaScript (Fetch API, DOM Manipulation)
 
 ## Live Demo
-[View Live App](https://YOUR_USERNAME.github.io/weather-app/)
+[View Live App](https://akhilbharti510.github.io/Weather-App/)
 
 ## Setup
 1. Clone the repository:
