@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="shortcut icon" href="./images/weather-app-favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card" id="app-card">
+    <!-- Theme toggle INSIDE the card (top-right corner) -->
+    <button id="theme-toggle" aria-label="Toggle theme">
+      <img id="theme-icon" src="./images/sun.png" alt="toggle theme">
+    </button>
+
+    <div class="search">
+      <input type="text" placeholder="Enter city name..." spellcheck="false">
+      <button>
+        <img src="./images/search.png" alt="search-icon">
+      </button>
+    </div>
+
+    <div class="error">
+      <p>Invalid city name</p>
+    </div>
+
+    <!-- Loader -->
+    <div class="loader" style="display:none;"></div>
+
+    <div class="weather">
+      <img src="./images/rain.png" class="weather-icon" alt="">
+      <h1 class="temp">TEMPERATUR°C</h1>
+      <h2 class="city">CITY</h2>
+
+      <div class="details">
+        <div class="col">
+          <img src="./images/humidity.png" alt="">
+          <div>
+            <p class="humidity">HUMIDITY%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <img src="./images/wind.png" alt="">
+          <div>
+            <p class="wind">15 km/hr</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unit Switch -->
+      <button id="unit-toggle" class="unit-btn">Switch to °F</button>
+    </div>
+
+    <!-- Forecast -->
+    <div class="forecast">
+      <h3>5-Day Forecast</h3>
+      <div class="forecast-cards"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
